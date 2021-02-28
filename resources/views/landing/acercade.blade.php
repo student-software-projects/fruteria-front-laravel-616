@@ -1,13 +1,20 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Acerca De</title>
-</head>
-<body>
-    <h1>Acerca De</h1>
-</body>
-</html>
+@extends('layout.app')
+
+@section('content')
+
+    <h3>ACERCA DE</h3>
+    <a href="{{route('landing.index')}}">INICIO</a><br>
+    <a href="{{route('landing.servicio')}}">SERVICIO</a><br>
+    <a href="{{route('landing.contact')}}">CONTACTO</a><br>
+<br>Fruteria Frutas de mi Bosque<br>
+<br>Mision:<br>
+    Dar a los clientes un buen servicio y traer frutos de calidad<br>
+
+    <br>Vision:<br>
+    extenderse a mas mercados<br>
+
+    <br>Dueños:<br>
+    Nombre: Ana Milena Ruiz Rojas <br>
+    Nombre: Hernando Perez Vallesteros<br>
+
+@endsection
