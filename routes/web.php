@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\LandingController;
+use App\Http\Controllers\fruits;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,7 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get( '/inicio',[LandingController::class,'index'])-> name('landing.index');
-Route::get( '/acerca',[LandingController::class,'acercade'])-> name('landing.acercade');
-Route::get( '/servicio',[LandingController::class,'servicio'])-> name('landing.domicilios');
-Route::get( '/contat',[LandingController::class,'contact'])-> name('landing.contact');
+Route::get( '/inicio',[fruits::class,'index'])-> name('index');
+Route::get( '/acerca',[fruits::class,'acercade'])-> name('acercade');
+Route::get( '/servicio',[fruits::class,'domicilios'])-> name('domicilios');
+Route::get( '/contact',[fruits::class,'contact'])-> name('contact');
