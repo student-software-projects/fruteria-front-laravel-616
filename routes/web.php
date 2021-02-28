@@ -17,7 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/inicio',[LandingController::class,'index'])->name("Landing.index");
-Route::get('/acerca',[LandingController::class,'acercade'])->name("Landing.acercade");
-Route::get('/domicilios',[LandingController::class,'domicilios'])->name("Landing.domicilios");
-Route::get('/contactos',[LandingController::class,'contactos'])->name("Landing.contactos");
+Route::get( '/inicio',[LandingController::class,'index'])-> name('landing.index');
+Route::get( '/acerca',[LandingController::class,'acercade'])-> name('landing.acercade');
+Route::get( '/servicio',[LandingController::class,'servicio'])-> name('landing.domicilios');
+Route::get( '/contat',[LandingController::class,'contact'])-> name('landing.contact');
